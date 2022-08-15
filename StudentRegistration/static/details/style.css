@@ -1,0 +1,24 @@
+* {
+    font-family: "Comic Sans MS";
+    font-size: xxx-large;
+}
+
+thead {
+    font-weight: bold;
+}
+
+#name {
+     color: green;
+}
+
+#subject {
+    color: purple;
+}
+
+#email{
+    color: darkred;
+}
+
+#message {
+    color: darkviolet;
+}

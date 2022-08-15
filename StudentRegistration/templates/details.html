@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link href="{% static 'details/style.css' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+{% if data %}
+
+    <table style="border: black 2px solid; ">
+
+    <thead >
+    <th style="border: solid 1px;" >Name</th> <th style="border: solid 1px;">Subject</th>
+    <th style="border: solid 1px;">Email </th> <th style="border: solid 1px;">Message</th>
+     </thead>
+    {% for record in data %}
+    <tr>
+    <td id="name" style="border: solid 1px;">{{ record.name }}</td>
+    <td id="subject" style="border: solid 1px;">{{ record.subject }}</td>
+    <td id="email" style="border: solid 1px;" >{{ record.email }}</td>
+    <td id="message" style="border: solid 1px;">{{ record.message }}</td>
+    </tr>
+    {%  endfor %}
+    </table>
+{% endif %}
+</body>
+</html>
